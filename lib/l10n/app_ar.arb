@@ -1,0 +1,23 @@
+{
+    "login":"تسجيل الدخول",
+    "name":"الاسم",
+    "password":"كلمة المرور",
+    "rememberMe":"تذكرنى",
+    "forgetPassword":"نسيت كلمة المرور",
+    "donotHaveAcc":"ليس لديك حساب ؟ إنشاء حساب",
+    "activationCode":"كود التفعيل",
+    "enterActivationCode":"إدخل كود التفعيل",
+    "enter":"دخول",
+    "resendActivationCode":"إعادة إرسال الكود",
+    "enterMobileNumber":"إدخل رقم الجوال",
+    "con":"استمرار",
+    "confirmPassword":"تأكيد كلمة المرور",
+    "phoneNumber":"رقم الجوال",
+    "email":"البريد الالكترونى",
+    "sex":"الجنس",
+    "male":"ذكر",
+    "female":"أنثى",
+    "alreadyHaveAcc":"لدى حساب بالفعل .. ",
+    "agree":"أوافق على الشروط",
+    "createAcc":"إنشاء حساب"
+}

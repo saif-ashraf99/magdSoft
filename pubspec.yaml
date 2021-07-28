@@ -24,16 +24,32 @@ dependencies:
   flutter:
     sdk: flutter
 
+  country_code_picker:
+  pin_code_text_field:
+  cupertino_icons: ^1.0.3 
+  flutter_country_picker: 
+
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+
+
+
+
+
+
+
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.2
+
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  pin_code_text_field:
-  country_picker: ^2.0.6 
+    
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -44,7 +60,7 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
-
+  generate: true
   # To add assets to your application, add an assets section, like this
   assets:
     - assets/
@@ -62,11 +78,11 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: font
+    - family: Regular
       fonts:
         - asset: fonts/Careem Regular.ttf
 
-    - family: font2
+    - family: Bold
       fonts:
         - asset: fonts/Careem Bold.ttf
 

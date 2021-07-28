@@ -11,6 +11,7 @@ class _CheckboxState extends State<CheckboxWidget> {
   @override
   Widget build(BuildContext context) {
     return Checkbox(
+      shape: CircleBorder(),
       value: isChecked,
       checkColor: AppColors.grey,
       onChanged: (bool? value) {

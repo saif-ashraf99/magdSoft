@@ -1,0 +1,23 @@
+{
+    "login":"Login",
+    "name":"Name",
+    "password":"Password",
+    "rememberMe":"Remember me",
+    "forgetPassword":"Forget password",
+    "donotHaveAcc":"Don't have an account ? create account",
+    "activationCode":"Activation code",
+    "enterActivationCode":"Enter activation code",
+    "enter":"Enter",
+    "resendActivationCode":"Resend activation code",
+    "enterMobileNumber":"Enter the mobile number",
+    "con":"Continue",
+    "confirmPassword":"Confirm password",
+    "phoneNumber":"Phone number",
+    "email":"Email",
+    "sex":"Sex",
+    "male":"Male",
+    "female":"Female",
+    "alreadyHaveAcc":"Already have account",
+    "agree":"I agree to the terms",
+    "createAcc":"Create account"
+}
