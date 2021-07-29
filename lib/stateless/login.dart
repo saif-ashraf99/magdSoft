@@ -24,14 +24,10 @@ class Login extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             CustomLogo(),
-            Container(
-              // height: 324,
-              width: 53,
-              child: Padding(
-                padding: EdgeInsets.fromLTRB(26, 0, 25, 0),
-                child: TextFormFieldWidget(
-                  text: "الاسم",
-                ),
+            Padding(
+              padding: EdgeInsets.fromLTRB(26, 0, 25, 0),
+              child: TextFormFieldWidget(
+                text: "الاسم",
               ),
             ),
             Padding(

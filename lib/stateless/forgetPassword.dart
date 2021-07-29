@@ -7,6 +7,9 @@ import 'components/customLogo.dart';
 import 'components/customTextFormField.dart';
 import 'login.dart';
 
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
 class ForgetPassword extends StatelessWidget {
   GlobalKey<FormState> _globalKey = GlobalKey<FormState>();
 
@@ -14,7 +17,7 @@ class ForgetPassword extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarWidget(
-        text: "نسيت كلمة المرور",
+        text: AppLocalizations.of(context)!.forgetPassword,
         icon: BackButton(
           onPressed: () {},
           color: AppColors.yellow,
@@ -28,14 +31,14 @@ class ForgetPassword extends StatelessWidget {
             Padding(
               padding: EdgeInsets.fromLTRB(35, 46, 16, 0),
               child: TextFormFieldWidget(
-                text: 'إدخل رقم الجوال',
+                text: AppLocalizations.of(context)!.enterMobileNumber,
                 countryPicker: CountryPickerWidget(),
               ),
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(56, 349, 56, 53),
               child: ButtonWidget(
-                text: "استمرار",
+                text: AppLocalizations.of(context)!.con,
               ),
             ),
           ],

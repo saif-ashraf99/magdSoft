@@ -4,6 +4,8 @@ import 'package:magdsoft_project/stateless/components/customAppBar.dart';
 import 'package:magdsoft_project/stateless/components/customButtonWidget.dart';
 import 'package:magdsoft_project/stateless/login.dart';
 
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'components/customLogo.dart';
 import 'components/customTextFormField.dart';
 
@@ -13,7 +15,7 @@ class ConfirmPassword extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarWidget(
-        text: "نسيت كلمة المرور",
+        text: AppLocalizations.of(context)!.forgetPassword,
         icon: BackButton(
           color: AppColors.yellow,
           onPressed: () {},
@@ -27,19 +29,19 @@ class ConfirmPassword extends StatelessWidget {
             Padding(
               padding: EdgeInsets.fromLTRB(34, 10, 17, 0),
               child: TextFormFieldWidget(
-                text: 'كلمة المرور',
+                text: AppLocalizations.of(context)!.password,
               ),
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(34, 18, 17, 0),
               child: TextFormFieldWidget(
-                text: 'تأكيد كلمة المرور',
+                text: AppLocalizations.of(context)!.confirmPassword,
               ),
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(55, 314, 57, 53),
               child: ButtonWidget(
-                text: "استمرار",
+                text: AppLocalizations.of(context)!.con,
               ),
             ),
           ],

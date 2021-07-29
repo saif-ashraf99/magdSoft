@@ -5,9 +5,13 @@ import 'package:magdsoft_project/stateful/countryPicker.dart';
 import 'package:magdsoft_project/stateful/dropdownButton.dart';
 import 'package:magdsoft_project/stateless/components/customButtonWidget.dart';
 import '../color.dart';
+import '../constants.dart';
 import 'components/customAppBar.dart';
 import 'components/customLogo.dart';
 import 'components/customTextFormField.dart';
+
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class CreateAccount extends StatelessWidget {
   GlobalKey<FormState> _globalKey = GlobalKey();
@@ -15,7 +19,7 @@ class CreateAccount extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarWidget(
-        text: "إنشاء حساب",
+        text: AppLocalizations.of(context)!.createAcc,
         icon: BackButton(
           color: AppColors.yellow,
           onPressed: () {},
@@ -28,21 +32,23 @@ class CreateAccount extends StatelessWidget {
             CustomLogo(),
             Padding(
               padding: EdgeInsets.fromLTRB(26, 0, 25, 0),
-              child: TextFormFieldWidget(text: "الاسم"),
+              child:
+                  TextFormFieldWidget(text: AppLocalizations.of(context)!.name),
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(26, 31, 25, 0),
               child: Container(
                 height: 53,
                 child: TextFormFieldWidget(
-                  text: "رقم الهاتف",
+                  text: AppLocalizations.of(context)!.phoneNumber,
                   countryPicker: CountryPickerWidget(),
                 ),
               ),
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(26, 32, 25, 0),
-              child: TextFormFieldWidget(text: "البريد الالكترونى"),
+              child: TextFormFieldWidget(
+                  text: AppLocalizations.of(context)!.email),
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(26, 31, 25, 0),
@@ -50,11 +56,13 @@ class CreateAccount extends StatelessWidget {
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(26, 32, 25, 0),
-              child: TextFormFieldWidget(text: "كلمة المرور"),
+              child: TextFormFieldWidget(
+                  text: AppLocalizations.of(context)!.password),
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(26, 31, 25, 0),
-              child: TextFormFieldWidget(text: "تأكيد كلمة المرور"),
+              child: TextFormFieldWidget(
+                  text: AppLocalizations.of(context)!.confirmPassword),
             ),
             Row(
               children: [
@@ -63,24 +71,16 @@ class CreateAccount extends StatelessWidget {
                   child: TextButton(
                     onPressed: () {},
                     child: Text(
-                      "تسجيل الدخول",
-                      style: TextStyle(
-                          color: AppColors.yellow,
-                          fontSize: 15,
-                          fontFamily: 'font',
-                          decoration: TextDecoration.underline),
+                      AppLocalizations.of(context)!.login,
+                      style: Styles.labelText2,
                     ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(0, 36.65, 79, 0),
                   child: Text(
-                    " ..لدى حساب بالفعل ",
-                    style: TextStyle(
-                        color: AppColors.black2,
-                        fontSize: 15,
-                        fontFamily: 'font',
-                        decoration: TextDecoration.underline),
+                    AppLocalizations.of(context)!.alreadyHaveAcc,
+                    style: Styles.labelText,
                   ),
                 )
               ],
@@ -98,7 +98,7 @@ class CreateAccount extends StatelessWidget {
                   child: Padding(
                     padding: EdgeInsets.fromLTRB(5, 28, 25, 0),
                     child: Text(
-                      "أوافق على الشروط",
+                      AppLocalizations.of(context)!.agree,
                       style: TextStyle(
                         color: AppColors.black2,
                         fontSize: 15,
@@ -111,7 +111,7 @@ class CreateAccount extends StatelessWidget {
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(56, 29.35, 56, 50),
-              child: ButtonWidget(text: "استمرار"),
+              child: ButtonWidget(text: AppLocalizations.of(context)!.con),
             ),
           ],
         ),

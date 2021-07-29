@@ -3,15 +3,19 @@ import 'package:magdsoft_project/stateless/components/customAppBar.dart';
 import 'package:magdsoft_project/stateless/components/customButtonWidget.dart';
 import 'package:pin_code_text_field/pin_code_text_field.dart';
 import '../color.dart';
+import '../constants.dart';
 import 'components/customLogo.dart';
 import 'login.dart';
+
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ActivationCode extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBarWidget(
-        text: "كود التفعيل",
+        text: AppLocalizations.of(context)!.activationCode,
         icon: BackButton(
           color: AppColors.yellow,
           onPressed: () {},
@@ -23,9 +27,8 @@ class ActivationCode extends StatelessWidget {
           Padding(
             padding: EdgeInsets.fromLTRB(109, 28, 108, 0),
             child: Text(
-              "إدخل كود التفعيل",
-              style: TextStyle(
-                  fontSize: 22, fontFamily: 'font', color: AppColors.black),
+              AppLocalizations.of(context)!.enterActivationCode,
+              style: Styles.textStyle,
             ),
           ),
           Padding(
@@ -43,12 +46,8 @@ class ActivationCode extends StatelessWidget {
             padding: EdgeInsets.fromLTRB(216, 26, 53, 0),
             child: TextButton(
               child: Text(
-                "إعادة إرسال الكود",
-                style: TextStyle(
-                    fontFamily: 'font',
-                    fontSize: 15,
-                    color: AppColors.black2,
-                    decoration: TextDecoration.underline),
+                AppLocalizations.of(context)!.resendActivationCode,
+                style: Styles.textStyle2,
               ),
               onPressed: () {},
             ),
@@ -56,7 +55,7 @@ class ActivationCode extends StatelessWidget {
           Padding(
             padding: EdgeInsets.fromLTRB(56, 224, 56, 73),
             child: ButtonWidget(
-              text: "إدخال",
+              text: AppLocalizations.of(context)!.enter,
             ),
           ),
         ],
